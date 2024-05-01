@@ -1,0 +1,27 @@
+id: 1c73c8a4-8e82-442e-ad18-01fdad8460ec
+timestamp: 2024-05-01T19:59:39.574Z
+source: INTELLIJ
+username: risbergt
+options:
+  nativeBuild: true
+  bsGitBranch: main
+  includeBuildToolWrapper: true
+  javaVersion: 21
+  bsGitRepository: github.com?owner=trisberg&repo=my-web-app-axl
+  buildTool: gradle
+  ide: intellij
+  includeDevContainer: false
+  projectName: my-web-app-axl
+accelerator:
+  name: tanzu-java-web-app-axl
+  git:
+    url: https://github.com/vmware-tanzu/application-accelerator-samples
+    subPath: tanzu-java-web-app
+    ref: dsl-tanzu-java-web-app
+    commit: 085b50752c8ba680411a5b4c70135184ba562385
+fragments:
+  - name: build-wrapper-gradle
+  - name: build-wrapper-maven
+  - name: devcontainer
+  - name: java-version
+  - name: tap-workload
